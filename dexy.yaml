@@ -1,0 +1,22 @@
+folder/doc-in-folder.txt|jinja:
+   - virtual.txt:
+      - contents: "This is virtual content"
+   - virtual.txt|pyg:
+      - contents: "This is virtual content plus pipe t"
+   - src/source.txt
+   - src/source.txt|pyg
+
+folder/doc-in-folder-without-pipe.txt|jinja:
+   - virtual.txt:
+      - contents: "This is virtual content"
+   - virtual.txt|pyg:
+      - contents: "This is virtual content plus pipe t"
+   - src/source.txt
+
+doc-at-root.txt|jinja:
+   - virtual.txt:
+      - contents: "This is virtual content"
+   - virtual.txt|pyg:
+      - contents: "This is virtual content plus pipe t"
+   - src/source.txt
+   - ../src/source.txt|pyg

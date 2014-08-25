@@ -1,0 +1,10 @@
+This file is at root : doc-at-root.txt
+This is a doc in root including :
+
+- a virtual content : {{ d['virtual.txt'] }}
+
+- a piped virtual content : {{ d['virtual.txt|pyg'] }}
+
+- a real source file : {{ d['src/source.txt'] }}
+
+.
